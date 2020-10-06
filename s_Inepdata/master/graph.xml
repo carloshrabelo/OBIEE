@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+
+<!--  $Header: bifndn/analytics_web/main/deploy/orahome/bifoundation/web/appv2/res/s_Alta/master/graph.xml /main/2 2015/01/12 23:23:49 mayankgu Exp $ -->
+
+<!-- 
+ Copyright (c) 2013, 2015, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     graph.xml - <one-line expansion of the name>
+
+   DESCRIPTION
+     <short description of component this file declares/defines>
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   sbudhara    03/18/13 - Creation
+
+-->
+
+<!-- Default block populated by BI. For explanation and customization of child elements 
+     please read the documentation following this block -->
+<Graph visualEffects="NONE" seriesEffect="SE_NONE" customLayout="">
+      <Title horizontalAlignment="LEFT">
+        <GraphFont name="Arial" size="13" fontColor="#1F1A17" bold="true"/>
+      </Title>
+      <SliceLabel>
+	   <!-- decimalDigitUsed is false here so that non-percentage pie slices do
+            not pick up this value. The DVTChartProcessor sets decimalDigitUsed
+            to true if this is a percentage pie slice -->
+           <ViewFormat decimalDigit="2" decimalDigitUsed="true"/>
+      </SliceLabel>
+	  
+      <SeriesItems>
+        <Series id="0" color="#4089A3" lineWidth="2"/>
+        <Series id="1" color="#68B02E" lineWidth="2"/>
+        <Series id="2" color="#B9D86A" lineWidth="2"/>
+        <Series id="3" color="#37B2DB" lineWidth="2"/>
+        <Series id="4" color="#838281" lineWidth="2"/>
+        <Series id="5" color="#AAA9A9" lineWidth="2"/>
+        <Series id="6" color="#267DB3" lineWidth="2"/>
+        <Series id="7" color="#68C182" lineWidth="2"/>
+        <Series id="8" color="#FAD55C" lineWidth="2"/>
+        <Series id="9" color="#ED6647" lineWidth="2"/>
+        <Series id="10" color="#8561C8" lineWidth="2"/>
+        <Series id="11" color="#6DDBDB" lineWidth="2"/>        
+      </SeriesItems>
+	
+      <O1Title fontSizeAbsolute="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </O1Title>
+
+      <X1Title fontSizeAbsolute="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </X1Title>
+
+      <Y1Title fontSizeAbsolute="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </Y1Title>
+
+      <Y2Title fontSizeAbsolute="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </Y2Title>
+
+      <O1TickLabel fontSizeAbsolute="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </O1TickLabel>
+	
+      <X1TickLabel fontSizeAbsolute="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </X1TickLabel>
+	
+      <Y1TickLabel fontSizeAbsolute="true" visible="true">
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </Y1TickLabel>
+	
+      <Y2TickLabel fontSizeAbsolute="true" visible="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </Y2TickLabel>
+	
+      <LegendText fontSizeAbsolute="true" >
+        <GraphFont name="Arial" size="11" fontColor="#1F1A17" bold="false" />
+      </LegendText>
+	
+      <Y1Axis lineColor="#9E9E9E" visible="false" />
+	
+      <Y2Axis lineColor="#9E9E9E" visible="false"/>
+	
+      <X1Axis lineColor="#9E9E9E" visible="true"/>
+	
+      <O1Axis lineColor="#9E9E9E" visible="true"/>
+	
+      <MarkerText >
+        <GraphFont name="Arial" bold="true" />
+      </MarkerText>
+	
+      <Y1MajorTick lineWidth="1" lineColor="#c4ced7" lineStyle="LS_SOLID"/>
+	  
+      <Y2MajorTick lineWidth="1" lineColor="#c4ced7" lineStyle="LS_SOLID"/>
+	  
+      <X1MajorTick lineWidth="1" lineColor="#c4ced7" lineStyle="LS_SOLID"/>
+	  
+      <Slice labelPosition="LP_OUTSIDE_WITHOUT_FEELER"/>
+	
+      <DataMarker markerSize="10"/>
+	
+      <QuadrantLine visible="false"/>
+	
+</Graph>
+
+<!-- The properties below are used to customize the graph defaults for this skin. To customize
+     the defaults, copy the desired example blocks, paste it after the ###NOTE### line inside
+     Graph tag below and edit the custom settings as  necessary. Please also remove or comment out 
+     the above default Graph block completely. In order to keep some or all of the BI provided overrides,
+     as provided in the above active default block, copy the desired contents and paste them similarly 
+     within the Graph tag below.
+     For uncommenting an example tag, just remove the comment characters at the beginning and
+     end of the example tag and set the desired attributes to override defaults. -->
+
+<!-- Notes:
+    1. Possible values of attributes are provided in parenthesis separated by commas.
+    2. In most of the cases, the attribute values are self-explanatory by their names.
+       Additional explanation of attribute values are provided only when the meaning is not clear.
+    3. Explanation of an element is not repeated, if it occurs later as part of another element.
+    4. The commented out example blocks don't show all the applicable attributes in some cases.
+       It is assumed that user would pick up the desired attributes/elements from the definition
+       blocks in such cases, as per requirements.
+    4. All color attributes' values should be specified in hex format, for example, #ffcc00 -->
+
+    
+	   
+<!-- ==================================GRAPH============================================== -->
+
+<!-- Graph: This describes the parent element for the graph style xml.
+    Attributes:
+    visualEffects:     Specifies whether any visual effects should be applied to the graph.
+                       Here it specifically refers to drop shadow effect.
+					   Valid values are:
+                           "NONE": No effects are applied (for example, drop-shadow is not
+                                   applied to the bars)
+                           "AUTO": Supported effects are applied. This is the default.
+    seriesEffect:      Determines the series effect that is used for a graph.
+                       Valid values are:
+                           "SE_NONE":     No effect (regular solid fill).
+                           "SE_GRADIENT": Gradient is applied on the series. This is the
+                                          default.
+                           "SE_PATTERN":  Pattern fill is applied to the series.
+    
+    Child Elements: As described below in Graph.
+    
+    example: -->
+    <!--
+    <Graph visualEffects="NONE" seriesEffect="SE_NONE" seriesObjectCount="27">
+      
+      ###NOTE: Please add your custom child elements following this line and remove this line###
+      
+    </Graph>
+    -->
+    
+<!-- ===============================GRAPH BACKGROUND====================================== -->
+
+    <!-- Background: Defines the graph background attributes. Note that this is the entire
+                     Graph canvas where plot area and other Graph components are rendered.
+    Attributes:
+    
+    fillColor:       Defines the background color.
+    fillTransparent: Determines if the background is transparent ("true", "false").
+    
+    example: -->
+    <!--
+    <Background fillColor="#ffffff" fillTransparent="false">
+    </Background>
+    -->
+
+    
+<!-- ===============================GRAPH PLOT AREA======================================= -->
+    
+    <!-- PlotArea: This describes the region where data is plotted in graphs other than for a
+                   pie.
+    Attributes:
+    
+    fillColor:         Defines the fill color of the plot area. When fillColor is specified,
+                       fillTransparent must also be specified
+    borderColor:       Defines the border color of plot area.
+    borderTransparent: Determines if the plot area border will be transparent ("true", "false").
+    fillTransparent:   Determines if the plot area fill will be transparent ("true", "false").
+    
+    example: -->
+    <!--
+    <PlotArea borderColor="#cccccc" borderTransparent="false" fillColor="#ffffff" fillTransparent="false">
+    </PlotArea>
+    -->
+
+    
+<!-- =======================================SERIES======================================== -->
+    
+    <!-- SeriesItems: This describes series-related attributes.
+    Attributes:
+    
+    Child Elements:
+    
+    Series: This describes a single series.
+    Attributes:
+    
+    id:				   Defines the series. 0 is the first.
+    markerShape:       Defines the shape of the marker. This is applicable only to scatter
+                       graphs ("MS_NONE", "MS_SQUARE", "MS_CIRCLE", "MS_DIAMOND", "MS_PLUS",
+                       "MS_TRIANGLE_DOWN", "MS_TRIANGLE_UP", "MS_HUMAN", "MS_AUTOMATIC").
+    lineWidth:         Defines the width of the lines in pixels. Applies to line, time series
+                       line, line-bar combo and radar graphs.
+    color:             Defines the color of this series.
+    markerColor:       Defines the color of markers in this series. Applies to line (if it by
+                       default displays single/disjointed point as marker or style formatting
+                       is applied via UI with default color), scatter and bubble graphs only.
+    borderColor:       Defines the border color of markers in this series. borderTransparent
+                       has to be specified (set to "false") for this to work. This applies to
+                       bar, area and scatter graphs.
+    borderTransparent: Determines if the border is transparent ("true", "false"). This doesn't
+                       apply to area graph
+    transparent:       Determines if markers in this series are transparent ("true", "false").
+                       This applies to all graphs
+    lineStyle:         Defines the style of the lines ("LS_SOLID", "LS_DASH", "LS_DOTTED",
+                       "LS_DASH_DOT"). Applies to line and radar graphs
+    visibility:        Defines the visibility of this series ("SV_VISIBLE", "SV_HIDDEN").
+                       Applies to all graphs except Funnel. Don't use SV_HIDDEN option when
+                       there is Funnel chart in a report.
+					   
+    Note: 
+	1) The id's in the series should be defined in continuous manner. 
+	For ex: Series Id should be 0,1,2,3,4 ......
+	
+	2) The default size of color pallete is 12
+         	
+	3) If the number of series color defined is :
+		i) Greater then 12 - 
+		In this case the default color pallete will be replaced by the newly defined colors.
+		For example if user has defined 14 colors then the colors will now start repeating after every 14th index i.e.
+		series 15 will have same color as series 1
+		series 16 will have same color as series 2 and so on..
+		
+		ii)Less then 12 -
+		For example if only 6 colors are defined then OBIEE will use default colors for color no. 7 to 12.
+		Also the colors will get repeated after every 12th index, and the repetition would reflect the colors defined here (6 in this case).
+	
+    example: -->
+    <!--
+    <SeriesItems>
+        <Series id="0" color="#636162"/>
+        <Series id="1" color="#c1bbbb"/>
+        <Series id="2" color="#203320"/>
+        <Series id="3" color="#998675"/>
+        <Series id="4" color="#4f5590"/>
+        <Series id="5" color="#d8edde"/>
+        <Series id="6" color="#1e677c"/>
+        <Series id="7" color="#dbce99"/>
+        <Series id="8" color="#9c683a"/>
+        <Series id="9" color="#636162"/>
+        <Series id="10" color="#c1bbbb"/>
+        <Series id="11" color="#203320"/>
+        <Series id="12" color="#998675"/>
+        <Series id="13" color="#4f5590"/>
+        <Series id="14" color="#d8edde"/>
+        <Series id="15" color="#1e677c"/>
+        <Series id="16" color="#dbce99"/>
+        <Series id="17" color="#9c683a"/>
+        <Series id="18" color="#636162"/>
+        <Series id="19" color="#c1bbbb"/>
+        <Series id="20" color="#203320"/>
+        <Series id="21" color="#998675"/>
+        <Series id="22" color="#4f5590"/>
+        <Series id="23" color="#d8edde"/>
+        <Series id="24" color="#1e677c"/>
+        <Series id="25" color="#dbce99"/>
+        <Series id="26" color="#9c683a"/>
+    </SeriesItems>
+    -->
+
+    
+<!-- ===============================GRAPH LEGEND========================================== -->
+      
+    <!-- LegendArea: This describes the graph legend area.
+    Attributes:
+    
+    visible: Determines if the legend is visible or not ("true", "false").
+                            
+    example: -->
+    <!--
+    <LegendArea visible="true"/>
+    -->
+
+    
+    <!-- LegendText: This describes the text for series items in the legend.
+    Attributes:
+    fontSizeAbsolute:    Determines if the font sizes are absolute or proportional to the
+                         graph ("true", "false"). If set to false, the font size specified in
+                         GraphFont won't be honored.
+    horizontalAlignment: Defines the horizontal alignment ("LEFT", "CENTER", "RIGHT", "LEADING").
+    
+    Child Elements:
+	
+    GraphFont: This describes the font for any graph text component.
+    Attributes:
+    
+    size:      Defines the size of the font
+    fontColor: Defines the font color.
+    bold:      Determines if the font is bold ("true", "false").
+    italic:    Determines if the font is italic ("true", "false").
+    underline: Determines if the font is underlined ("true", "false").
+    
+    example: -->
+    <!--
+    <LegendText fontSizeAbsolute="true" horizontalAlignment="LEFT">
+        <GraphFont fontColor="#0" bold="false" italic="false" underline="false"/>
+    </LegendText>
+    -->
+
+    
+<!-- ==================================MARKER TEXT (DATA LABELS)========================== -->
+    
+    <!-- MarkerText: This describes the text for bars, lines, area markers, and so on. This is
+                     not visible by default.
+    Attributes:
+    
+    fontSizeAbsolute: Determines if font sizes are absolute or proportional to the graph
+                      ("true", "false"). If set to "false", the font size specified in
+                      GraphFont won't be honored.
+    markerTextPlace:  Defines where, in relation to the marker, that the marker text displays.
+                      Valid values are:
+                          "MTP_OUTSIDE_MAX": Outside max is above the bar.
+                          "MTP_ON_MAXEDGE": On max edge is sitting on the bar.
+                          "MTP_INSIDE_MAX": Inside max is on the bar and near the top.
+                          "MTP_INSIDE_MIN": Inside min is on the bar and near the bottom.
+                          "MTP_CENTER": Center is centered on the bar.
+                      
+                      Note that the position settings will be applied only when DataMarker
+                      display option is set to Always from Graph UI. The settings won't be
+                      honored for Stacked and 100% Stacked vertical/horizontal Bar graphs
+                      since the default position is already overridden by BI internally.
+
+    Child Elements:
+    
+    GraphFont:
+    
+    Note that the font settings will be applied when DataMarker display option is set to
+    Always from Graph UI. It will not get applied for tooltip text (DataMarker display option
+    On RollOver). Also the settings won't be honored for Stacked and 100% Stacked
+    vertical/horizontal Bar graphs. Font style for bold and/or italic cannot be set.
+    
+    example: -->
+    <!--
+    <MarkerText fontSizeAbsolute="true" markerTextPlace="MTP_OUTSIDE_MAX">
+        <GraphFont size="12" fontColor="#0" underline="false"/>
+    </MarkerText>
+    -->
+
+    
+<!-- ==============================X AXIS-for bar, line, and area graphs================== -->
+
+    <!-- O1Axis: This describes the ordinal axis, which is also known as the category, x-axis,
+                 or group axis on bar, line, and area graphs.
+    Attributes:
+    
+    visible:   Determines if axis is visible ("true", "false"). By default it's visible
+               ("true"). If set to "false" (and O1TickLabel's visible attribute is not
+               specified), the axis labels and the axis line, normally rendered with a default
+               darker color, are not visible, but an axis line with a default lighter color
+               will be still visible (i.e. the axis line can never be removed).
+               Also, if any line width and/or color is applied, it will not get appiled even
+               if the axis line is visible with the lighter color. The axis line width and
+               color get applied only when this attribute is not specified (default) or set to
+               "true".
+    lineWidth: Defines the axis line width in pixels.
+    lineColor: Defines the axis line color.
+    
+    example: -->
+    <!--
+    <O1Axis visible="true" lineWidth="2" lineColor="#0"/>
+    -->
+    
+    
+    <!-- O1TickLabel: This describes the labels along the O1Axis, which are usually along
+                      bottom edge of the plot area. Automatic layout arranges these labels for
+                      the best reading and display. Therefore you normally do not need to set
+                      these attributes.
+    Attributes:
+    
+    fontSizeAbsolute:     Determines if the font sizes are absolute or proportional to the
+                          graph ("true", "false").
+    horizontalAlignment:  Defines the horizontal alignment of the labels ("LEFT", "CENTER",
+                          "RIGHT", "LEADING").
+    visible:              Determines if the label is visible ("true", "false"). Note that if
+                          O1Axis visible attribute is set to "true", and this attribute is set
+                          to "false", the labels will not be displayed, but the axis line will
+                          still get displayed along with customized line color etc.
+                          But if O1Axis visible attribute is set to "false", and if this
+                          attribute is set to "true", the labels will be displayed.
+    automaticRotation:    Defines how labels should be rotated when rotation is automatic
+                          ("AR_NO_ROTATE", "AR_HORIZ_ROTATE_90", "AR_HORIZ_ROTATE_270").
+                          
+    example: -->
+    <!--
+    <O1TickLabel fontSizeAbsolute="true" horizontalAlignment="CENTER" automaticRotation="AR_HORIZ_ROTATE_270">
+        <GraphFont size="12" fontColor="#0" bold="false" italic="false" underline="false"/>
+    </O1TickLabel>
+    -->
+
+    
+<!-- ==================================GRAPH TITLE======================================== -->
+    
+    <!-- Title: This describes the graph title.
+    Attributes:
+    
+    fontSizeAbsolute: Determines if the font size is absolute or proportional to the graph
+                      ("true", "false"). If set to "true", the GraphFont size set will not be
+                      honored.
+    
+    Child Elements:
+    
+    GraphFont:
+    
+    example: -->
+    <!--
+    <Title fontSizeAbsolute="true">
+        <GraphFont size="14" fontColor="#0" bold="true" italic="false" underline="false"/>
+    </Title>
+    -->    
+    
+    <!-- O1Title: This describes the title for the ordinal axis (O1Axis).
+    Attributes:
+    
+    fontSizeAbsolute:    Determines if the font sizes are absolute or proportional to the
+                         graph ("true", "false"). If set to "true", the GraphFont size set
+                         will not be honored.
+    horizontalAlignment: Defines the horizontal alignment of the title text ("LEFT", "CENTER",
+                         "RIGHT", "LEADING").
+    
+    Child Elements:
+    
+    GraphFont:
+    
+    example: -->
+    <!--
+    <O1Title fontSizeAbsolute="true" horizontalAlignment="CENTER">
+        <GraphFont size="12" fontColor="#ff0000" bold="false" italic="false" underline="false"/>
+    </O1Title>
+    -->
+
+    
+    <!-- X1Title: This describes the title for the X data axis on bubble and scatter graphs.
+    Attributes: This is the same as O1Title.
+    
+    Child Elements: This is the same as O1Title.
+    
+    example: -->
+    <!--
+    <X1Title fontSizeAbsolute="true" horizontalAlignment="CENTER">
+        <GraphFont size="14" fontColor="#0" bold="false" italic="false" underline="false"/>
+    </X1Title>
+    -->
+
+    
+    <!-- Y1Title: This describes the title for the Y1-axis (left side). The title reads up.
+                  This is applicable to all axis charts. In case of horizontal axis charts,
+                  this refers to the horizontal axis where numeric (Y1) scale is used.
+    Attributes: This is the same as X1Title. Note that horizontalAlignment attribute really
+                refers to top and bottom specified by RIGHT and LEFT respectively where the
+                axis is vertically rendered (true for all except horizontal axis charts where
+                this attribute has the same meaning as specified by the values).
+    
+    Child Elements: This is the same as X1Title.
+    
+    example: -->
+    <!--
+    <Y1Title fontSizeAbsolute="true" horizontalAlignment="CENTER">
+        <GraphFont size="14" fontColor="#00ff00" bold="false" italic="false" underline="false"/>
+    </Y1Title>
+    -->
+
+    
+    <!-- Y2Title: This describes the title for the Y2-axis (right side). This title reads down.
+                  (So, as a result, the meaning of horizontalAlignment attribute will have the
+                  opposite effect as in Y1Title (i.e. RIGHT and LEFT would result into bottom
+                  and top alignment respectively.) This applies to Line-Bar Combo graph.
+    Attributes: This is the same as Y1Title.
+    
+    Child Elements: This is the same as the Y1Title.
+    
+    example: -->
+    <!--
+    <Y2Title fontSizeAbsolute="true" horizontalAlignment="CENTER">
+        <GraphFont size="14" fontColor="#00ff00" bold="false" italic="false" underline="false"/>
+    </Y2Title>
+    -->
+    
+    
+<!-- ==============================X1AXIS on a bubble or scatter graph==================== -->  
+    
+    <!-- X1Axis: This describes the horizontal data axis on bubble and scatter graphs.
+    Attributes:
+    
+    lineWidth:              Defines the axis line width in pixels.
+    lineColor:              Defines the axis line color.
+    axisMaxLabelVisible:    Determines if the label for the maximum value displays
+                            ("true", "false").
+    axisMinLabelVisible:    Determines if the label for the minimum value displays
+                            ("true", "false").
+    minAutoMajorTickStep:   Defines the minimum automatic major tick step.
+    scaledLogarithmic:      Determines if the axis uses a log scale ("true", "false").
+    axisAutoScaledFromZero: Determines if the axis always scales from zero or from the lowest
+                            data value ("true", "false").
+    visible:                Determines if the axis is visible ("true", "false").
+                            See the details mentioned under O1Axis for this attribute.
+    
+    example: -->
+    <!--
+    <X1Axis lineWidth="2" lineColor="#0" axisMaxLabelVisible="true" axisMinLabelVisible="true" scaledLogarithmic="false" visible="true"/>
+    -->
+ 
+    
+    <!-- X1MajorTick: This describes the tick marks (gridlines) along the X1Axis for bubble
+                      and scatter graphs.
+    Attributes:
+    
+    visible:   Determines if the tick marks are visible ("true", "false").
+    lineWidth: Defines the axis line width in pixels.
+    lineColor: Defines the axis line color.
+    lineStyle: Defines the axis line style ("LS_SOLID", "LS_DASH", "LS_DOTTED", "LS_DASH_DOT").
+               
+    example: -->
+    <!--
+    <X1MajorTick visible="true" lineWidth="1" lineColor="#cccccc" lineStyle="LS_SOLID"/>
+    -->
+
+       
+    <!-- X1TickLabel: This describes the labels for the X1Axis. The labels are numeric and
+                      across the bottom of bubble and scatter graphs.
+    Attributes:
+    
+    fontSizeAbsolute:    Determines if the font sizes are absolute or proportional to the
+                         graph ("true", "false").
+    horizontalAlignment: Defines the horizontal alignment of the labels ("LEFT", "CENTER",
+                         "RIGHT", "LEADING").
+    textRotation:        Defines the rotation of text. Text rotation is horizontal, reading up,
+                         or reading down ("TR_HORIZ", "TR_HORIZ_ROTATE_90", "TR_HORIZ_ROTATE_270").
+    visible:             Determines if the labels are visible ("true", "false").
+                         See the details mentioned under O1TickLabel for this attribute..
+    
+    Child Elements:
+    
+    GraphFont:
+    
+    example: -->
+    <!--
+    <X1TickLabel fontSizeAbsolute="true" textRotation="TR_HORIZ" horizontalAlignment="CENTER">
+        <GraphFont size="12" fontColor="#0" bold="false" italic="false" underline="false"/>
+    </X1TickLabel>
+    -->
+
+    
+<!-- ==================================Y1AXIS on a axis graph============================= -->
+    
+    <!-- Y1Axis: This describes the left data axis on a vertical graph inclduing Scatter and
+                 Bubble (horizontal axis in case of horizontal bar graphs).
+    Attributes: This is the same as X1Axis.
+                Note: When visible attribute is set to "false", unlike X1Axis/O1Axis, both the
+                (default) axis line and the labels are not rendered. So the axis line can be
+                completely removed.
+    
+    Child Elements: This is the same as X1Axis.
+    
+    example: -->
+    <!--
+    <Y1Axis lineWidth="2" lineColor="#0" axisMaxLabelVisible="true" axisMinLabelVisible="true" scaledLogarithmic="false" visible="true"/>
+    -->
+    
+    
+    <!-- Y1MajorTick: Defines the tick marks along the Y1Axis. This includes the gridlines
+                      (associated with the Y1 axis) displayed inside the plot area.
+    Attributes: This is the same as X1MajorTick.
+    
+    example: -->
+    <!--
+    <Y1MajorTick visible="true" lineWidth="1" lineColor="#cccccc" lineStyle="LS_SOLID"/>
+    -->
+    
+    
+    <!-- Y1TickLabel: This describes the labels for the Y1Axis. These are numeric and along
+                      the left edge.
+    Attributes: This is the same as X1TickLabel.
+    
+    Child Elements: This is the same as X1TickLabel.
+    
+    example: -->
+    <!--
+    <Y1TickLabel fontSizeAbsolute="true" textRotation="TR_HORIZ" horizontalAlignment="CENTER" tickLabelStaggered="false">
+        <GraphFont size="10" fontColor="#0" bold="false" italic="false" underline="false"/>
+    </Y1TickLabel>
+    -->
+    
+    
+<!-- ==================================Y2AXIS on a vertical graph========================= -->
+
+    <!-- Y2Axis: This describes the right data axis on a vertical graph. This applies to
+                 Line-Bar Combo and Pareto graphs.
+    Attributes: This is the same as Y1Axis.
+    
+    Child Elements: This is the same as Y1Axis. Note that scaledLogarithmic attribute is not
+                    applicable to Pareto graph.
+    
+    example: -->
+    <!--
+    <Y2Axis lineWidth="2" lineColor="#0" axisMaxLabelVisible="true" axisMinLabelVisible="true" scaledLogarithmic="false" visible="true"/>
+    -->
+    
+    
+    <!-- Y2MajorTick: Defines the tick marks along the Y2Axis. This includes the gridlines
+                      (associated with the Y2 axis) displayed inside the plot area.
+                      Note: For Line-Bar Combo graph, if Y1MajorTick line color etc. is also
+                      specified, that will get overridden with Y2MajorTick line. In case of
+                      Pareto, it doesn't draw the Y2 gridlines (since it's always on 0%-100%
+                      scale) - only the outer small tick lines are drawn, so the Y1MajorTick
+                      line will be still visible.
+    Attributes: This is the same as Y1MajorTick.
+    
+    example: -->
+    <!--
+    <Y2MajorTick visible="true" lineWidth="1" lineColor="#cccccc" lineStyle="LS_SOLID"/>
+    -->
+    
+    
+    <!-- Y2TickLabel: This describes the labels for the Y2Axis. These are numeric and along
+                      the right edge.
+    Attributes: This is the same as Y1TickLabel.
+    
+    Child Elements: This is the same as Y1TickLabel.
+    
+    example: -->
+    <!--
+    <Y2TickLabel fontSizeAbsolute="true" textRotation="TR_HORIZ" horizontalAlignment="CENTER" tickLabelStaggered="false">
+        <GraphFont size="10" fontColor="#00ff00" bold="false" italic="false" underline="false"/>
+    </Y2TickLabel>
+    -->
+    
+    
+<!-- ==============================BLUE QUADRANT LINES on bubble graphs=================== -->
+    
+    <!-- QuadrantLine: This describes the big blue lines across bubble graphs. This element
+                       controls lines across both axes.
+    Attributes:
+    
+    lineColor: Defines the quadrant line color.
+    lineWidth: Defines the quadrant line width.
+    visible:   Determines if the line is visible ("true", "false"). By default, the line is
+               visible.
+    
+    example: -->
+    <!--
+    <QuadrantLine lineColor="#ff00bb" lineWidth="1"/>
+    -->
+
+    
+<!-- ==================================PIE================================================ -->
+    
+    <!-- PieFrame: This describes the region where data is plotted in a pie graph. This is
+                   equivalent to PlotArea of other graph types.
+    Attributes: Same as PlotArea attributes
+    
+    example: -->
+    <!--
+    <PieFrame borderColor="#ff0000" borderTransparent="false" fillColor="#00cc00" fillTransparent="false"/>
+    -->
+
+    
+    <!-- PieLabel: This describes the labels for pies in a pie graph. The label is displayed
+                   at the bottom of each pie.
+    Attributes:
+    
+    fontSizeAbsolute: Determines if the font sizes are absolute or proportional to the graph
+                      ("true", "false").
+    text:             Label text. For multi-pie, the same text will be applied to all the pies.
+    visible:          Determines if the labels are visible ("true", "false"). By default, the
+                      labels are visible.
+    
+    Child Elements:
+    
+    GraphFont:
+    
+    example: -->
+    <!--
+    <PieLabel fontSizeAbsolute="true" visible="true">
+        <GraphFont size="14" fontColor="#ff0000" bold="true" italic="true" underline="true"/>
+    </PieLabel>
+    -->
+
+    
+    <!-- Slice: This describes data on a pie graph in terms of how to position the data labels.
+    Attributes:
+    
+    labelPosition: Defines where the label is in relation to the slice. A feeler is a line
+                   connecting the label to slice ("LP_OUTSIDE_WITH_FEELER",
+                   "LP_OUTSIDE_WITHOUT_FEELER", "LP_OUTSIDE_FEELER_IF_NEEDED", "LP_INSIDE").
+                   Note that these settings will get applied only when Data Marker display
+                   option is set to "Always" from the UI customizer.
+    
+    example: -->
+    <!--
+    <Slice labelPosition="LP_OUTSIDE_FEELER_IF_NEEDED"/>
+    -->
+    
+    <!-- SliceLabel: This describes the text for pie slices. Note that these settings will get
+                     applied only when Data Marker display option is set to "Always" from the
+                     UI customizer.
+    Attributes:
+    
+    fontSizeAbsolute: Determines if the font sizes are absolute or proportional to the graph
+                      ("true", "false").
+    
+    Child Elements:
+    Note: Although ViewFormat is used in the below uncommented contents currently populated by
+    BI, this element is not exposed to be used (and therefore the definition is not provided).
+    
+    GraphFont: Note that bold and italic styles are not supported.
+    
+    ViewFormat:
+    
+    examples: -->
+    
+    <!--
+    <SliceLabel fontSizeAbsolute="true">
+        <GraphFont size="12" fontColor="#00ff00" underline="false"/>
+    </SliceLabel>
+    -->
+    
+    <!--
+    <SliceLabel>
+        <ViewFormat decimalDigit="2" decimalDigitUsed="false"/>
+    </SliceLabel>
+    -->
+    
+<!-- ======================================PARETO========================================= -->
+  
+    <!-- ParetoLine: This describes the line that shows cumulative percentage in a pareto graph.
+    Attributes:
+    
+    color:       Defines the line color.
+    width:       Defines the width of a pareto line in pixels.
+    markerShape: Defines the shape of markers along the line ("MS_NONE", "MS_SQUARE",
+                 "MS_CIRCLE", "MS_DIAMOND", "MS_PLUS", "MS_TRIANGLE_DOWN", "MS_TRIANGLE_UP").
+                 Note that the marker shape can also be set on the ParetoMarker element. The
+                 marker shape will be applied and displayed only when the pareto line is
+                 customized through Style Formatting UI customizer (without specifying a marker
+                 shape).
+    lineStyle:   Defines the line style ("LS_SOLID", "LS_DASH", "LS_DOTTED", "LS_DASH_DOT").
+    
+    example: -->
+    <!--
+    <ParetoLine color="#333333" width="2" lineStyle="LS_SOLID"/>
+    -->
+    
+    
+    <!-- ParetoMarker: This describes the marker on a pareto line in a pareto graph.
+    Attributes:
+    
+    fillColor:   Defines the fill color of the marker.
+    markerShape: Defines the shape of markers along the line ("MS_NONE", "MS_SQUARE",
+                 "MS_CIRCLE", "MS_DIAMOND", "MS_PLUS", "MS_TRIANGLE_DOWN", "MS_TRIANGLE_UP",
+                 "MS_AUTOMATIC"). See the details in ParetoLine's markerShape on how to get
+                 this applied. Also note that this setting overrides the markerShape set in
+                 ParetoLine.
+                 
+    example: -->
+    <!--
+    <ParetoMarker fillColor="#333333" markerShape="MS_SQUARE"/>
+    -->
