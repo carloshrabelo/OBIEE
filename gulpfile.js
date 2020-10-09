@@ -1,9 +1,11 @@
 const fs = require("fs");
-const { watch, series, parallel, ...gulp } = require("gulp");
+const gulp = require("gulp");
 const sass = require("gulp-sass");
 const gulpClean = require("gulp-clean");
 const gulpZip = require("gulp-zip");
 const imagemin = require("gulp-imagemin");
+
+const { watch, series, parallel } = gulp;
 
 const extImg = ["png", "gif", "jpg", "jpeg"].join("|");
 const extCss = ["css", "scss"].join("|");
