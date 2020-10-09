@@ -1,0 +1,345 @@
+.sectionHeader {
+  font-weight: bold;
+  border-bottom: 1px solid #a9adb5;
+}
+
+.gaugeLayoutEditor {
+  width: 600pt;
+  background-color: #fff;
+}
+
+.gaugeEdge {
+  color: #394139;
+  background-color: #f9fbff;
+  width: 100%;
+  border-color: #b9b9b4;
+  border-width: 1px;
+  border-style: solid;
+  padding: 3px;
+}
+
+.gaugeLayout {
+  color: #394139;
+  background-color: #ebf0fe;
+  width: 100%;
+  border-color: #b9b9b4;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0;
+}
+
+.gaugeColumn {
+  background-repeat: repeat-x;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #c6c9c0;
+  white-space: nowrap;
+}
+
+.gaugeTable {
+  color: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c6cbc6;
+  background-color: #c6cbc6;
+  padding: 3px;
+  white-space: nowrap;
+}
+
+.gaugeCornerCell {
+  background-color: #ebf0fe;
+  border-style: dotted;
+  border-color: #5a5d52;
+  border-width: 0 1px 1px 0;
+}
+
+.gaugeMeasure {
+  vertical-align: middle;
+  text-align: center;
+  background-color: #ebf0fe;
+  border-style: dotted;
+  border-color: #5a5d52;
+  border-width: 1px 0 0 1px;
+}
+
+.gaugeCols {
+  width: 100%;
+}
+
+.gaugeRows {
+  width: 100%;
+}
+
+.chartSelection {
+  border: 1px solid #585b56;
+  background-color: #e9e7d0;
+  margin: 4px 4px 4px 4px;
+  padding: 4px 4px 4px 4px;
+}
+
+.chartLegendPreview {
+  color: #999;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #ced9e6;
+  cursor: move;
+}
+
+.chartPreview {
+  background-color: White;
+  margin: 4px 4px 4px 4px;
+  padding: 4px 4px 4px 4px;
+}
+
+.chartMeasures {
+  margin: 4px 4px 4px 4px;
+}
+
+.chartAxis {
+  border: 1px solid #ced9e6;
+  background-color: #fefeff;
+  margin-left: 0;
+  margin-right: 4px;
+  padding: 4px 4px 4px 4px;
+}
+
+.chartExcluded {
+  border: 1px solid #d4d0c8;
+  background-color: White;
+  margin: 4px 4px 4px 4px;
+  padding: 4px 4px 4px 4px;
+}
+
+.chartBoldHeader {
+  color: #3e403d;
+  font-weight: bold;
+}
+
+.chartHeader {
+  color: #3e403d;
+}
+
+.chartGreyText {
+  color: #999;
+  padding: 5px 4px 4px 4px;
+}
+
+.chartColumnHdr {
+  background-color: inherit;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #c6c9c0;
+}
+
+.chartColumn {
+  background-color: White;
+  padding: 4px 4px 4px 4px;
+  border-left: 1px solid #c6c9c0;
+  border-bottom: 1px solid #c6c9c0;
+  border-right: 1px solid #c6c9c0;
+  background-repeat: repeat-x;
+  white-space: nowrap;
+}
+
+.chartHColumnHdr {
+  background-color: #e9e7d0;
+  padding: 4px 4px 4px 4px;
+}
+
+.chartHColumn {
+  background-color: White;
+  padding: 4px 4px 4px 4px;
+  background-repeat: repeat-x;
+}
+
+.chartHColumnDisabled {
+  background-color: White;
+  padding: 4px 4px 4px 4px;
+  background-repeat: repeat-x;
+  color: #999;
+}
+
+.chartHColumnDraggable {
+  background-color: White;
+  padding: 4px 4px 4px 4px;
+  background-repeat: repeat-x;
+  cursor: move;
+}
+
+.chartHColumnDraggable img {
+  vertical-align: bottom;
+}
+
+.chartColumnGroup {
+  border-collapse: collapse;
+  border-color: #585b56;
+  margin: 2px 2px 2px 2px;
+}
+
+.chartColumnPreview {
+  color: #999;
+}
+
+.chartEdgeContainer {
+  border: 1px solid #b9b9b4;
+  background-color: #fefeff;
+  margin-left: 0;
+  margin-right: 4px;
+  padding: 4px 4px 4px 4px;
+}
+
+.ThrshInput {
+  border: 1px solid #b9b9b4;
+  padding-left: 2px;
+  margin: 1px;
+  width: 200px;
+}
+
+.ThrshValueInput {
+  width: 250px;
+}
+
+.ThrshLabelInput {
+  width: 250px;
+}
+
+.ThrshBottomBorder {
+  border-bottom: 1px solid #a6b3c8;
+}
+
+.ThrshNoBottomBorder {
+  border-bottom: 0 solid #a6b3c8;
+}
+
+#idViewdisplayAsSlider {
+  vertical-align: middle;
+}
+
+A.AnchorDisabled {
+  color: #000;
+  padding: 2px 2px 2px 29px;
+  display: block;
+  cursor: default;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #ccc;
+}
+A.AnchorDisabled:hover {
+  background-color: #ccc;
+}
+.chartErrorSpan {
+  padding-left: 10px;
+  line-height: 14pt;
+  color: Red;
+  font-size: 10pt;
+  font-weight: bold;
+}
+.chartToolBarChoiceListBox {
+  color: #000;
+  height: 16px;
+}
+.chartToolBarChoiceListBox img {
+  width: 16px;
+  height: 16px;
+}
+.chartToolBarTextField {
+  padding: 0;
+  margin-top: 2px;
+}
+.chartToolBarTextFieldDisabled {
+  padding: 0;
+  margin-top: 2px;
+  color: #999;
+}
+.chartToolBarDropDownButton {
+  text-align: left;
+  vertical-align: bottom;
+  margin-right: 0;
+  margin-bottom: 1px;
+}
+div.ChartToolbarDropDownValueList {
+  position: absolute;
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  background: #fff;
+}
+div.ChartToolbarDropDownValueList a.Row {
+  display: block;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  color: #3c3c3c;
+  padding-top: 2px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.ThresholdArrowBody {
+  background: url(../answers/arrow_body.png) repeat;
+}
+.ScaleMarkersTable {
+  border: solid 1px BLACK;
+  border-collapse: collapse;
+}
+.ScaleMarkersCellWithBorder {
+  border-top: solid 1px BLACK;
+  border-bottom: solid 1px BLACK;
+  border-left: solid 1px BLACK;
+  border-right: solid 1px BLACK;
+}
+.ScaleMarkersCellNoRightBorder {
+  border-top: solid 1px BLACK;
+  border-bottom: solid 1px BLACK;
+  border-left: solid 1px BLACK;
+}
+.ScaleMarkersCellNoLeftBorder {
+  border-top: solid 1px BLACK;
+  border-bottom: solid 1px BLACK;
+  border-right: solid 1px BLACK;
+}
+.ScaleMarkersCellWithBorderAndHColumn {
+  background-color: White;
+  padding: 4px 4px 4px 4px;
+  background-repeat: repeat-x;
+  border-top: solid 1px BLACK;
+  border-bottom: solid 1px BLACK;
+  border-left: solid 1px BLACK;
+  border-right: solid 1px BLACK;
+}
+.DVTPromptDisabledEntry {
+  padding: 3px 8px 3px 0;
+}
+.DVTPromptDisabledEntry {
+  color: #7e807a;
+  white-space: nowrap;
+}
+.DVTPromptDisabledEntry INPUT,
+.DVTPromptDisabledEntry SELECT,
+.DVTPromptDisabledEntry TEXTAREA {
+  vertical-align: baseline;
+}
+.ChartViewInputError {
+  vertical-align: baseline;
+  border: 1px solid #b9b9b4;
+  padding: 1px 1px 1px 1px;
+  background-color: #f99;
+}
+.layoutEditorDiv {
+  background-color: #f9fbff;
+  width: 98%;
+}
+.ChartPrompts {
+  width: 98%;
+  background-color: #f9fbff;
+  margin-left: 5;
+}
+.DVTPromptGroupDiv {
+  padding-top: 5px;
+}
+.DVTPosCondFormat img {
+  vertical-align: bottom;
+}
+.DVTRadioInputWithText {
+  margin-top: -2px;
+}
