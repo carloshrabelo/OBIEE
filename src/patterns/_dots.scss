@@ -1,0 +1,5 @@
+@mixin dots($color1: #fff, $color2: #3ab3de17) {
+  background: linear-gradient(90deg, color1 15px, transparent 1%) center,
+    linear-gradient(color1 12px, transparent 1%) center, $color2;
+  background-size: 18px 16px;
+}
